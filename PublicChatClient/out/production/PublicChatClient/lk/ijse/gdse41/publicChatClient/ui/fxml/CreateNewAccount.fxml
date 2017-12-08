@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane fx:id="root" prefHeight="450.0" prefWidth="421.0" stylesheets="@../util/css/Login.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse41.publicChatClient.ui.controller.CreateNewAccount">
+   <children>
+      <AnchorPane fx:id="svgPane" prefHeight="380.0" prefWidth="421.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label fx:id="title" layoutX="113.0" layoutY="14.0" text="Create New Account" />
+            <Label layoutX="29.0" layoutY="58.0" styleClass="label-info" text="Username" />
+            <TextField fx:id="txtUsername" layoutX="131.0" layoutY="56.0" prefHeight="25.0" prefWidth="187.0" />
+            <Label layoutX="29.0" layoutY="90.0" styleClass="label-info" text="Full Name" />
+            <TextField fx:id="txtName" layoutX="131.0" layoutY="88.0" onKeyTyped="#namingFieldsRestriction" prefHeight="25.0" prefWidth="270.0" />
+            <Label layoutX="29.0" layoutY="123.0" styleClass="label-info" text="Date of Birth" />
+            <DatePicker fx:id="dtPkr" editable="false" layoutX="131.0" layoutY="121.0" />
+            <Label layoutX="29.0" layoutY="157.0" styleClass="label-info" text="Gender" />
+            <ComboBox fx:id="cmbGender" layoutX="130.0" layoutY="154.0" prefWidth="150.0" />
+            <Label layoutX="30.0" layoutY="204.0" styleClass="label-info" text="Address" />
+            <TextArea fx:id="txtAddress" layoutX="129.0" layoutY="190.0" prefHeight="48.0" prefWidth="270.0" />
+            <Label layoutX="30.0" layoutY="253.0" styleClass="label-info" text="NIC" />
+            <TextField fx:id="txtNic" layoutX="130.0" layoutY="250.0" prefHeight="25.0" prefWidth="161.0" promptText="xxxxxxxxxxV" />
+            <Label layoutX="30.0" layoutY="287.0" styleClass="label-info" text="Contact No." />
+            <TextField fx:id="txtContact" layoutX="130.0" layoutY="285.0" onKeyTyped="#intRestriction" promptText="xxxxxxxxxx" />
+            <Label layoutX="32.0" layoutY="329.0" styleClass="label-info" text="Picture" />
+            <TextField fx:id="txtPath" layoutX="99.0" layoutY="327.0" prefHeight="25.0" prefWidth="213.0" />
+            <Button fx:id="btnBrowse" layoutX="329.0" layoutY="327.0" mnemonicParsing="false" onAction="#btnBrowseAction" text="Browse" />
+            <Button fx:id="btnCreate" layoutX="233.0" layoutY="377.0" mnemonicParsing="false" onAction="#createAccount" text="Create Account" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

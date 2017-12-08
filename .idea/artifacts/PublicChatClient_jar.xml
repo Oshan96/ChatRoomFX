@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="PublicChatClient:jar">
+    <output-path>$PROJECT_DIR$/PublicChatClient/out/artifacts/PublicChatClient_jar</output-path>
+    <properties id="ant-postprocessing">
+      <options enabled="true">
+        <file>file://$PROJECT_DIR$/PublicChatClient/build.xml</file>
+        <target>post-jar-client</target>
+      </options>
+    </properties>
+    <root id="archive" name="PublicChatClient.jar">
+      <element id="module-output" name="PublicChatClient" />
+      <element id="module-output" name="PublicChatCommon" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/jfoenix/jfoenix/1.9.1/jfoenix-1.9.1.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

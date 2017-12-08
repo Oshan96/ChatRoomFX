@@ -1,0 +1,46 @@
+.textfield{
+    -fx-font-size: 14px;
+}
+.password-field{
+    -fx-font-size: 14px;
+}
+.label{
+    -fx-font-size: 18px;
+    -fx-font-family: "Arial";
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+
+#title{
+    -fx-font-size: 20px;
+}
+
+#createNewAccount:hover{
+    -fx-cursor: hand;
+    -fx-underline: true;
+}
+
+#svgPane{
+    -fx-shape: "M0 0 L 10 0 L 0 10 Z";
+    -fx-background-color: linear-gradient(to left, #4776e6, #8e54e9);
+    -fx-effect: dropshadow(gaussian,rgba(23,32,56,0.7), 2, 1, 1, 0);
+}
+
+#root{
+    -fx-background-color: linear-gradient(to left, #ff512f, #dd2476);
+}
+
+#btnLogin, #btnCreate{
+    -fx-background-color: linear-gradient(to left, #4776e6, #8e54e9);
+    -fx-background-radius: 8em;
+    -fx-font-size: 20px;
+
+}
+#btnLogin:hover {
+    -fx-background-color: linear-gradient(to right, #4776e6, #8e54e9);
+}
+
+.label-info{
+    -fx-font-size: 16px;
+    -fx-text-fill: white;
+}

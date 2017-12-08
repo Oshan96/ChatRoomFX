@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="PublicChatServer:jar">
+    <output-path>$PROJECT_DIR$/PublicChatServer/out/artifacts/PublicChatServer_jar</output-path>
+    <properties id="ant-postprocessing">
+      <options enabled="true">
+        <file>file://$PROJECT_DIR$/PublicChatServer/build.xml</file>
+        <target>post-jar-server</target>
+      </options>
+    </properties>
+    <root id="archive" name="PublicChatServer.jar">
+      <element id="module-output" name="PublicChatServer" />
+      <element id="module-output" name="PublicChatCommon" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/mysql/mysql-connector-java/6.0.5/mysql-connector-java-6.0.5.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

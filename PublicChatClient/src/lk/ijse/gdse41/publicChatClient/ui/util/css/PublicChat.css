@@ -1,0 +1,280 @@
+#rootPane{
+    -fx-background-color: linear-gradient(to left, #ff512f, #dd2476);
+}
+
+#detailPane{
+    -fx-background-color: rgba(32, 29, 30,0.8);
+}
+#chatPane{
+
+    -fx-background-color: rgba(0,0,0,0.3);
+}
+
+.textFlow{
+    -fx-background-color: linear-gradient(to left, #ff512f, #dd2476);
+    -fx-background-insets: -5 -10 -5 -5;
+    -fx-effect: dropshadow(three-pass-box,rgba(0,0,0,0.08),2,1.0,0.5,0.5);
+    -fx-shape: "M 94.658379,129.18587 H 46.277427 c -3.545458,0.23354 -5.32763,-1.59167 -5.14193,-4.67449
+    v -19.39913 c 0.405797,-3.73565 2.470637,-4.56641 5.14193,-4.90821 h 43.706464 c 2.572701,0.2361 4.604321,
+    1.68288 4.674488,4.90821 v 19.39913 c 0.436089,3.14572 2.890695,3.57304 4.908212,4.67449 z";
+}
+
+.textFlowFlipped{
+    -fx-background-color: linear-gradient(to left, #4776e6, #8e54e9);
+    -fx-background-insets: -5 -5 -5 -10;
+    -fx-effect: dropshadow(three-pass-box,rgba(0,0,0,0.08),2,1.0,-0.5,-0.5);
+    -fx-shape: "m 46.030545,129.18592 h 48.380952 c 3.54546,0.23355 5.32763,-1.59167 5.14193,-4.67449
+    V 105.1123 c -0.4058,-3.73565 -2.47064,-4.56641 -5.14193,-4.90821 H 50.705033
+    c -2.572701,0.2361 -4.604321,1.68288 -4.674488,4.90821 v 19.39913
+    c -0.436089,3.14572 -2.890695,3.57304 -4.908212,4.67449 z";
+}
+
+.tempFlow{
+    -fx-padding: 5 15 5 5;
+}
+
+.tempFlowFlipped{
+    -fx-padding: 5 5 5 15;
+}
+
+.hbox{
+    -fx-background-insets: 15;
+    -fx-padding: 12px;
+}
+
+.imageView{
+    /*-fx-stroke: red;*/
+    /*-fx-effect: dropshadow(gaussian, rgba(0,0,0,0.6) , 1, 1, 0, 0);*/
+    -fx-background-radius: 50%;
+    -fx-padding: 3;
+}
+
+#emojiList{
+    -fx-font-size: 16px;
+    -fx-padding: 2;
+    -fx-text-fill: chocolate;
+    -fx-background-color: rgba(255,255,255,0.7);
+}
+
+#btnEmoji{
+    -fx-min-width: 15px;
+    -fx-min-height: 15px;
+    -fx-padding: 2;
+    -fx-background-color: transparent;
+    -fx-font-size: 16px;
+    -fx-text-fill: chocolate;
+    -fx-shape: "M 95.250002,86.845238 A 17.008928,17.386906 0 0 1 78.241074,104.23214 17.008928,
+    17.386906 0 0 1 61.232145,86.845238 17.008928,17.386906 0 0 1 78.241074,69.458332 17.008928,
+    17.386906 0 0 1 95.250002,86.845238 Z";
+}
+
+#btnClose{
+    -fx-background-radius: 50%;
+    -fx-graphic: url("../images/icons/logout.png");
+    -fx-background-color: transparent;
+}
+
+#btnClose:hover{
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5) , 0.5, 0.5, 2, 2);
+}
+
+#txtMsg{
+    -fx-padding: 0 19;
+    -fx-background-color: transparent, white, transparent,white;
+    -fx-background-insets: 0, 6, 0;
+    -fx-background-radius: 8em;
+}
+#txtMsg .scroll-pane{
+    -fx-background-color: transparent;
+}
+#txtMsg .scroll-pane >.viewport , #txtMsg >.viewport{
+    -fx-background-color: transparent;
+}
+
+#txtMsg .scroll-pane .scroll-bar:vertical, #txtMsg .scroll-bar:vertical{
+    -fx-background-color:inherit;
+}
+
+#txtMsg .scroll-pane .scroll-bar:vertical .track{
+    -fx-background-color:transparent;
+    -fx-border-color:transparent;
+    -fx-background-radius: 0em;
+
+}
+#txtMsg .scroll-pane .scroll-bar:vertical .increment-button,
+#txtMsg .scroll-pane .scroll-bar:vertical .decrement-button{
+    -fx-background-color:transparent;
+    -fx-background-radius: 0em;
+    -fx-padding:0 0 10 0;
+
+}
+
+#txtMsg .scroll-pane  .scroll-bar .increment-arrow,
+#txtMsg .scroll-pane  .scroll-bar .decrement-arrow {
+    -fx-shape: " ";
+    -fx-padding:0;
+}
+#txtMsg .scroll-pane .scroll-bar:vertical .thumb {
+    -fx-background-color:transparent;
+}
+
+
+.message{
+    -fx-font-size: 14px;
+    -fx-font-weight: 300;
+}
+
+.text-area .content {
+    -fx-background-color: transparent, white, transparent, white;
+    -fx-text-alignment: center;
+}
+
+.text-area:focused .content {
+    -fx-background-color: transparent, white, transparent, white;
+}
+
+.txtName{
+    -fx-fill: black;
+    -fx-font-size: 10px;
+}
+
+#svgPane{
+    -fx-shape: "M0 0 L 10 0 L 0 10 Z";
+    -fx-background-color: linear-gradient(to left, #4776e6, #8e54e9);
+    -fx-effect: dropshadow(gaussian,rgba(23,32,56,0.7), 2, 1, 1, 0);
+}
+
+#clientListScroll{
+    -fx-background-color: transparent;
+}
+#clientListScroll >.viewport{
+    -fx-background-color: transparent;
+}
+
+#clientListScroll .scroll-bar:vertical{
+    -fx-background-color:inherit;
+
+}
+
+#clientListScroll .scroll-bar:vertical .track{
+    -fx-background-color:transparent;
+    -fx-border-color:transparent;
+    -fx-background-radius: 0em;
+
+}
+#clientListScroll .scroll-bar:vertical .increment-button,
+#clientListScroll .scroll-bar:vertical .decrement-button{
+    -fx-background-color:transparent;
+    -fx-background-radius: 0em;
+    -fx-padding:0 0 10 0;
+
+}
+
+#clientListScroll  .scroll-bar .increment-arrow,
+#clientListScroll  .scroll-bar .decrement-arrow {
+    -fx-shape: " ";
+    -fx-padding:0;
+}
+#clientListScroll .scroll-bar:vertical .thumb {
+    -fx-background-color:transparent;
+
+}
+#clientListScroll:hover .scroll-bar:vertical .thumb{
+    -fx-background-color:rgba(0,0,0,0.6);
+    -fx-background-insets: 4, 0, 0;
+    -fx-background-radius: 2em;
+}
+
+
+#clientListBox{
+    -fx-background-color: transparent;
+}
+
+#scrollPane{
+    -fx-background-color: transparent;
+}
+#scrollPane >.viewport{
+    -fx-background-color: transparent;
+}
+
+#scrollPane .scroll-bar:vertical{
+    -fx-background-color:inherit;
+
+}
+
+#scrollPane .scroll-bar:vertical .track{
+    -fx-background-color:transparent;
+    -fx-border-color:transparent;
+    -fx-background-radius: 0em;
+
+}
+#scrollPane .scroll-bar:vertical .increment-button,
+#scrollPane .scroll-bar:vertical .decrement-button{
+    -fx-background-color:transparent;
+    -fx-background-radius: 0em;
+    -fx-padding:0 0 10 0;
+
+}
+
+#scrollPane  .scroll-bar .increment-arrow,
+#scrollPane  .scroll-bar .decrement-arrow {
+    -fx-shape: " ";
+    -fx-padding:0;
+}
+#scrollPane .scroll-bar:vertical .thumb {
+    -fx-background-color:transparent;
+
+}
+#scrollPane:hover .scroll-bar:vertical .thumb{
+    -fx-background-color:rgba(0,0,0,0.6);
+    -fx-background-insets: 4, 0, 0;
+    -fx-background-radius: 2em;
+}
+
+.chatBox{
+    -fx-padding: 20px;
+    -fx-background-insets: -25px;
+}
+
+#btnSend{
+    /*-fx-background-radius: 50%;*/
+    /*-fx-background-color: rgba(0,0,0,0.3);*/
+    /*-fx-border-color: transparent;*/
+    -fx-background-color: white;
+    /*-fx-effect: dropshadow(gaussian, rgba(255,255,255,0.5) ,0.5, 0.5, 0, 0);*/
+    -fx-shape: "m 138.55021,89.698036 v 0 l 1.27487,-1.138164 -1.2721,-1.016698 c 4.08005,1.020056 4.33904,0.732386 -0.003,2.154862 z";
+}
+
+#btnSend:hover{
+    /*-fx-border-color: white;*/
+    /*-fx-background-color: rgba(0,0,0,0.3);*/
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5) , 0.5, 0.5, 2, 2);
+}
+
+.online-label , .online-settings{
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+.online-settings:hover{
+    -fx-font-size: 18px;
+    -fx-cursor: hand;
+}
+
+.online-label-details{
+    -fx-text-fill: lightgray;
+    -fx-font-size: 12px;
+}
+.online-user-container{
+    -fx-background-color: inherit;
+}
+.online-user-container:hover{
+
+    -fx-border-color: linear-gradient(to left,rgba(255,255,255,0),rgba(255,255,255,0.8)) transparent
+    linear-gradient(to right,rgba(255,255,255,0),rgba(255,255,255,0.8)) transparent;
+    -fx-border-width: 2;
+}
+.online-user-container:hover .circle{
+    -fx-effect: dropshadow(three-pass-box, red, 2, 2, 0, 0);
+}

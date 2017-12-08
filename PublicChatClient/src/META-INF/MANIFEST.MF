@@ -1,0 +1,3 @@
+Manifest-Version: 1.0
+Main-Class: lk.ijse.gdse41.publicChatClient.main.Main
+
